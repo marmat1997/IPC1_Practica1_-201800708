@@ -52,14 +52,15 @@ public class Aritmetica {
         }
     }while (m2 !=6);
     }
-    public void suma(){
+    public int suma(){
         System.out.println("Ingrese el primer número");
         a = leer.nextInt();
         System.out.println("Ingrese el segundo número");
         b = leer.nextInt();
-        c = a+b;
+        //c = a+b;
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
+        return a+b;
 }
         public void resta(){
         System.out.println("Ingrese el primer número");
