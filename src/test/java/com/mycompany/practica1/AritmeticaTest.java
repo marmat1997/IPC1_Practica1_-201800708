@@ -79,5 +79,26 @@ public class AritmeticaTest {
         //Assert.assertTrue(ResTest == res);
         assertTrue(ResTest == res);     
     }
-    
+    @Test
+   public void testFact(){
+   float t1 = 5;
+        float t2 = 2;
+        Avanzadas instance = new Avanzadas();
+        float ResTest = 120;
+        float res = instance.TFact(t1);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);     
+   }
+   @Test
+      public void testAbs(){
+        float t1 = -5;
+        float t2 = 2;
+        Avanzadas instance = new Avanzadas();
+        float ResTest = 5;
+        float res = instance.TAbs(t1);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);     
+   }
 }
