@@ -85,10 +85,13 @@ public class Aritmetica {
         a = leer.nextFloat();
         System.out.println("Ingrese el segundo número");
         b = leer.nextFloat();
-        c = a*b;
+        c = tmulti(a,b);//a*b;
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
 }
+            public float tmulti(float t1, float t2){
+            return t1*t2;
+            }
                 public void divi(){
         System.out.println("Ingrese el primer número");
         a = leer.nextFloat();
@@ -103,6 +106,9 @@ public class Aritmetica {
             System.out.println("Su división tiende a infinito");
         }
 }
+       public float tdivi(float t1, float t2){
+            return t1/t2;
+            }
     /*public static void main(String[] args) {
         System.out.println("Hola, bienvenido a aritmetica");
     }*/

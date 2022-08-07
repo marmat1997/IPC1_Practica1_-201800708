@@ -46,10 +46,26 @@ public class AritmeticaTest {
 
     @Test
     public void testMulti() {
+        float t1 = 8;
+        float t2 = 8;
+        Aritmetica instance = new Aritmetica();
+        float ResTest = 64;
+        float res = instance.tmulti(t1, t2);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);
     }
 
     @Test
     public void testDivi() {
+        float t1 = 8;
+        float t2 = 8;
+        Aritmetica instance = new Aritmetica();
+        float ResTest = 1;
+        float res = instance.tdivi(t1, t2);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);
     }
 
     @Test
