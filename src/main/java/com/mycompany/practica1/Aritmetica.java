@@ -35,14 +35,17 @@ public class Aritmetica {
                 System.out.println(" ");
                 System.out.println("------------Multiplicación------------");
                 multi();
+                break;
             case 4:
                 System.out.println(" ");
                 System.out.println("------------División------------");
                 divi();
+                break;
             case 5:
                 System.out.println(" ");
                 System.out.println("------------Potencia------------");
                 pot();
+                break;
             case 6:
                 System.out.println(" ");
                 break;
@@ -98,7 +101,7 @@ public class Aritmetica {
         System.out.println("Ingrese el segundo número");
         b = leer.nextFloat();
         if(b!=0){
-        c = a/b;
+        c = tdivi(a,b);
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
         }
