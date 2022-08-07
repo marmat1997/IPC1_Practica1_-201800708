@@ -4,10 +4,6 @@
  */
 package com.mycompany.practica1;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,108 +16,52 @@ public class AritmeticaTest {
     public AritmeticaTest() {
     }
 
-    @org.junit.BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @org.junit.AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
-    @org.junit.Before
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.After
-    public void tearDown() throws Exception {
-    }
-    
-    /*@BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    /**
-     * Test of MenuAri method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testMenuAri() {
-        System.out.println("MenuAri");
-        Aritmetica instance = new Aritmetica();
-        instance.MenuAri();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of suma method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testSuma() {
-        System.out.println("suma");
+        float t1 = 1;
+        float t2 = 1;
         Aritmetica instance = new Aritmetica();
-        instance.suma();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        float ResTest = 2;
+        float res = instance.tsuma(t1, t2);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);
     }
 
-    /**
-     * Test of resta method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testResta() {
-        System.out.println("resta");
+        float t1 = 8;
+        float t2 = 4;
         Aritmetica instance = new Aritmetica();
-        instance.resta();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        float ResTest = 4;
+        float res = instance.tresta(t1, t2);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);
     }
 
-    /**
-     * Test of multi method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testMulti() {
-        System.out.println("multi");
-        Aritmetica instance = new Aritmetica();
-        instance.multi();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of divi method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testDivi() {
-        System.out.println("divi");
-        Aritmetica instance = new Aritmetica();
-        instance.divi();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of pot method, of class Aritmetica.
-     */
-    @org.junit.Test
+    @Test
     public void testPot() {
-        System.out.println("pot");
+   float t1 = 2;
+        float t2 = 2;
         Aritmetica instance = new Aritmetica();
-        instance.pot();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        float ResTest = 4;
+        float res = instance.tpot(t1, t2);
+        //assertArrayEquals(expecteds, actuals, res);
+        //Assert.assertTrue(ResTest == res);
+        assertTrue(ResTest == res);     
     }
     
 }

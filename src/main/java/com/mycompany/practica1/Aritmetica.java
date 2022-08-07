@@ -6,9 +6,9 @@ package com.mycompany.practica1;
 import java.util.Scanner;
 public class Aritmetica {
     Scanner leer = new Scanner(System.in);
-    int a;
-    int b;
-    int c;
+    float a;
+    float b;
+    float c;
     int m2;
     public void MenuAri (){
         System.out.println("Bienvenido a aritmetica");
@@ -52,39 +52,48 @@ public class Aritmetica {
         }
     }while (m2 !=6);
     }
-    public int suma(){
+    public void suma(){
         System.out.println("Ingrese el primer número");
-        a = leer.nextInt();
+        a = leer.nextFloat();
         System.out.println("Ingrese el segundo número");
-        b = leer.nextInt();
-        //c = a+b;
+        b = leer.nextFloat();
+        c = tsuma(a,b);//a+b;
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
-        return a+b;
 }
+    public float tsuma(float t1, float t2){
+    
+        return t1+t2;
+    
+    }
         public void resta(){
         System.out.println("Ingrese el primer número");
-        a = leer.nextInt();
+        a = leer.nextFloat();
         System.out.println("Ingrese el segundo número");
-        b = leer.nextInt();
-        c = a-b;
+        b = leer.nextFloat();
+        c = tresta(a,b);//a-b;
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
 }
+            public float tresta(float t1, float t2){
+    
+        return t1-t2;
+    
+    }
             public void multi(){
         System.out.println("Ingrese el primer número");
-        a = leer.nextInt();
+        a = leer.nextFloat();
         System.out.println("Ingrese el segundo número");
-        b = leer.nextInt();
+        b = leer.nextFloat();
         c = a*b;
         System.out.println("\033[32mSu resultado es "+c);
         System.out.println(" ");
 }
                 public void divi(){
         System.out.println("Ingrese el primer número");
-        a = leer.nextInt();
+        a = leer.nextFloat();
         System.out.println("Ingrese el segundo número");
-        b = leer.nextInt();
+        b = leer.nextFloat();
         if(b!=0){
         c = a/b;
         System.out.println("\033[32mSu resultado es "+c);
@@ -99,17 +108,26 @@ public class Aritmetica {
     }*/
         public void pot(){
         System.out.println("Ingrese la base");
-        a = leer.nextInt();
+        a = leer.nextFloat();
         System.out.println("Ingrese la potencia");
-        b = leer.nextInt();
+        b = leer.nextFloat();
         c = 0;
-        int poti = 1;
-       for(int i=1; i<=b; i++){
+        //double poti = 1;
+       /*for(int i=1; i<=b; i++){
        //c = a+c;
        poti = poti*a;
-       } 
+       } */
        //c = a^b;
+       float poti = tpot(a,b);
         System.out.println("\033[32mSu resultado es "+poti);
         System.out.println(" ");
 }
+     public float tpot(float a, float b){
+     float poti = 1;
+            for(int i=1; i<=b; i++){
+       //c = a+c;
+       poti = poti*a;
+       }
+            return poti;
+     }
 }
